@@ -17,13 +17,11 @@ public class SimpleStringEncoder {
                 }
                 symbol = input.charAt(i);
             }
-            if (i == input.length() - 1) {
-                if (counter > 1) {
-                    result += symbol + "" + counter;
-                } else {
-                    result += symbol;
-                }
-            }
+        }
+        if (counter > 1) {
+            result += symbol + "" + counter;
+        } else {
+            result += symbol;
         }
         return result;
     }
